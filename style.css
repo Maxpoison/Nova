@@ -1,0 +1,298 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	margin:0;
+	padding:0;
+	font-size:14px;
+	font-family: 'Roboto', Arial, sans-serif;
+	color:#363636;
+	font-weight:300;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight:900;
+	margin:1em 0 0.5em;
+	color:#696969;
+}
+
+h1 { font-size:3em;}
+h2 { font-size:2.2em;}
+h3 { font-size:2em;}
+h4 { font-size:1.6em;}
+h5 { font-size:1.4em;}
+h6 { font-size:1.2em;}
+
+p {
+	margin:0.3em 0 0.5em;
+}
+
+img {
+	vertical-align:bottom;
+	max-width:100%;
+}
+
+a:link,
+a:visited {
+	text-decoration:none;
+	color:#e84e1b;
+}
+
+a:hover {
+	color:#f39200;
+}
+
+a:active {
+	color:#696969;
+}
+
+.wrapper {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.wrapper::after,
+.cf::after {
+	display: table;
+	content: "";
+	clear: both;
+}
+
+.negative {
+	color: #FFF;
+}
+
+.negative h1,
+.negative h2,
+.negative h3,
+.negative h4,
+.negative h5,
+.negative h6 {
+	color: #FFF;
+}
+
+.negative a:link,
+.negative a:visited {
+	color: #EBE7D2;
+	text-decoration: none;
+}
+
+.negative a:hover {
+	color: #FFF;
+	text-decoration: underline;
+}
+
+.negative a:active {
+	color: #EEE;
+}
+
+.button {
+    border: 1px solid #e84e1b;
+    border-radius: 5px;
+    color: #e84e1b;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 1;
+    padding: 17px 33px 15px;
+	margin:20px 0;
+    text-transform: uppercase;
+}
+
+.button:hover {
+	background:#e84e1b;
+	color:#fff;
+}
+
+.negative .button {
+    border: 1px solid #FFF;
+    color: #FFF;
+}
+
+.negative .button:hover {
+	background: #FFF;
+    color: #e84e1b;
+	text-decoration:none;
+}
+
+#headerTop {
+	background: #363636;
+	border-bottom: 4px solid #ececec;
+	color: #898989;
+	font-size: 12px;
+	padding: 6px 0;
+}
+
+#headerTopLeft {
+	float: left;
+}
+
+#headerTopLeft span {
+	margin-right: 40px;
+}
+
+#headerTopRight {
+	float: right;
+}
+
+#headerBottom {
+	background: #FFF;
+}
+
+#logo {
+	float: left;
+}
+
+#logo img {
+	height: 40px;
+	padding: 35px 0 25px;
+}
+
+#nav {
+	float: right;
+}
+
+#nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#nav ul li {
+	float: left;
+}
+
+#nav ul li a {
+	display: block;
+	height: 40px;
+	line-height: 40px;
+	padding: 35px 20px 25px;
+}
+
+#nav ul li a:link,
+#nav ul li a:visited {
+	text-decoration: none;
+	color: #898989;
+	border-bottom: 4px solid #FFF;
+}
+
+#nav ul li a:hover {
+	background: #FAF7EB;
+	color: #e84e1b;
+	border-bottom: 4px solid #e84e1b;
+}
+
+#nav ul li a:active {
+	background: #EEE;
+	border-bottom: 4px solid #CCC;
+}
+
+#hero {
+	background-image:url(slike/hero.jpg);
+	background-attachment: fixed;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 180px 0;
+	text-align: center;
+}
+
+#products {
+	background: #F2F2F2;
+	padding: 50px 0 100px;
+	text-align: center;
+}
+
+.product {
+	width: 200px;
+    padding: 35px 35px 15px;
+    margin-top: 100px;
+    margin-right: 40px;
+    background: #FFF;
+    float: left;
+	position: relative;
+}
+
+.product:nth-of-type(4n) {
+	margin-right: 0;
+}
+
+.product span {
+	background: #CCC;
+	width: 60px;
+	height: 60px;
+	line-height: 60px;
+	display: block;
+	border-radius: 30px;
+	position: absolute;
+	top: -30px;
+	left: 50%;
+	margin-left: -30px;
+	font-size: 30px;
+}
+
+#about {
+	background-image: url(slike/about.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 100px 0;
+}
+
+#aboutText {
+	background: rgba(0,0,0,0.4);
+	padding: 40px;
+	width: 600px;
+}
+
+#partner {
+	padding:60px 0 100px;
+	text-align:center;
+}
+
+.partners {
+	padding: 40px 0;
+}
+
+.partners .slide {
+	float: left;
+	width: 220px;
+	margin-right: 25px;
+}
+
+.partners .slide:nth-of-type(5n) {
+	margin-right: 0;
+}
+
+#footer {
+	padding:60px 0;
+	background:#363636;
+	color:#C5C5C5;
+}
+
+.footerBlock {
+	float:left;
+	margin-right:40px;
+	width:300px;
+}
+
+.footerBlockR {
+	float:right;
+}
+
+.footerBlockR img {
+	height:40px;
+	margin-top:50px;
+}
+
+#footerBottom {
+	border-top:1px solid #909090;
+	margin-top:30px;
+	padding:30px 0;
+}
+
+#footerBottom .button {
+	float:right;
+}
+
