@@ -1,1 +1,1 @@
-# Nova
+# Nova demo website project
